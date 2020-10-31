@@ -1,0 +1,52 @@
+.docs {
+    display: flex;
+    justify-content: center;
+    padding: 0px 380px;
+    /* overflow-x: hidden; */
+}
+.docs-content {
+    display: flex;
+    /* width: 65%; */
+    margin-top: 55px;
+    /* background-color: #f5f5f5; */
+    padding: 50px;
+    padding-top: 0px;
+}
+.docs-info {
+    padding: 10px 40px;
+    max-width: 80%;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.docs-info h1,
+.docs-info h2,
+.docs-info h3,
+.docs-info h4,
+.docs-info h5,
+.docs-info h6 {
+    font-family: "Open Sans";
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    margin-bottom: 5px;
+    font-weight: 500;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.docs-info a {
+    text-decoration: none;
+    color: #0366d6;
+}
+.docs-info ol {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.docs-info li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1050px) {
+    /* TODO add burguer menu */
+    .sidebar {
+        display: none;
+    }
+}

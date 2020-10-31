@@ -1,0 +1,37 @@
+.header {
+    /* background-color: #02589c; */
+    background-color: #649ad2;
+    /* background-color: #014482; */
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-family: "Ubuntu mono", "Open Sans";
+    color: #fff;
+    /* background-color: lightcoral; */
+}
+.header-title {
+    /* background-color: lightgray; */
+    flex: 3;
+}
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    /* background-color: lightpink; */
+}
+.header-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
+/* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
