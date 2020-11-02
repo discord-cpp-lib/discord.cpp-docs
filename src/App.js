@@ -7,10 +7,9 @@ const App = () => {
     return (
         <div className="App">
             <Router>
-				{/* <Header/> */}
                 <Switch>
-                    <Route path="/docs" component={Docs} />
-                    <Route path="/" component={Home} />
+                    <Route path="/documentation/content" component={Docs} />
+                    <Route path="/documentation" component={Home} />
                 </Switch>
             </Router>
         </div>
