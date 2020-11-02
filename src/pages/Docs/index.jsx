@@ -6,17 +6,22 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import Header from "../../components/Header/index";
 import gettingStarted from "./markdown/getting-started";
+import simpleBot from "./markdown/simple-bot";
 
 const Docs = () => {
     const [selectedMd, setSelectedMd] = useState("getting_started");
 
     const sections = {
         getting_started: gettingStarted,
+        simple_bot: simpleBot,
     };
 
     useEffect(() => {
         document.title = "Docs | discord.cpp";
-    }, []);
+        document.querySelectorAll("a").forEach((a) => {
+            a.target = "_blank";
+        });
+    }, [selectedMd]);
 
     return (
         <div>
