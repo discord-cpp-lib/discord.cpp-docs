@@ -1,1 +1,1 @@
-# [discord.cpp documentation](https://luccanunes.github.io/docs)
+# [discord.cpp documentation](https://luccanunes.github.io/discord.cpp-docs/)
