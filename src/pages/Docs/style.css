@@ -43,6 +43,9 @@
 .docs-info li {
     margin-bottom: 5px;
 }
+.docs-info img {
+    margin-top: 5px;
+}
 
 @media (max-width: 1050px) {
     /* TODO add burguer menu */
