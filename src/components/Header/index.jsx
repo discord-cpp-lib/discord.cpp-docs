@@ -6,7 +6,7 @@ const Header = () => (
     <div className="header">
         <div className="header-content">
             <div className="header-title">
-                <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
+                <Link to="/documentation" style={{ textDecoration: "none", color: "#fff" }}>
                     <h1>discord.cpp</h1>
                 </Link>
             </div>
@@ -14,7 +14,6 @@ const Header = () => (
                 <a target="_blank" rel="noreferrer" href="https://github.com/luccanunes/discord.cpp">
                     GitHub
                 </a>
-                {/* <Link to="/docs">Docs</Link> */}
             </div>
         </div>
     </div>
