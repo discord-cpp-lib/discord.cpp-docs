@@ -7,6 +7,7 @@ import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import Header from "../../components/Header/index";
 import gettingStarted from "./markdown/getting-started";
 import simpleBot from "./markdown/simple-bot";
+import embeds from "./markdown/embeds";
 
 const Docs = () => {
     const [selectedMd, setSelectedMd] = useState("getting_started");
@@ -14,6 +15,7 @@ const Docs = () => {
     const sections = {
         getting_started: gettingStarted,
         simple_bot: simpleBot,
+        embeds: embeds,
     };
 
     useEffect(() => {
