@@ -8,6 +8,7 @@ import Header from "../../components/Header/index";
 import gettingStarted from "./markdown/getting-started";
 import simpleBot from "./markdown/simple-bot";
 import embeds from "./markdown/embeds";
+import webhooks from "./markdown/webhooks";
 
 const Docs = () => {
     const [selectedMd, setSelectedMd] = useState("getting_started");
@@ -15,7 +16,8 @@ const Docs = () => {
     const sections = {
         getting_started: gettingStarted,
         simple_bot: simpleBot,
-        embeds: embeds,
+        embeds,
+        webhooks,
     };
 
     useEffect(() => {

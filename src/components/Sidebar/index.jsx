@@ -5,7 +5,7 @@ const Sidebar = ({ selectedMd = "", selectMd = () => {} }) => {
     const topics = {
         General: ["Getting started"],
         Examples: ["Simple BOT", "Embeds", "Webhooks"],
-        Classes: ["Client", "Message", "Channel", "User", "Guild", "Role"],
+        Classes: ["Client", "Message", "Channel", "User", "Embed", "Guild", "Role", "Webhook"],
     };
     return (
         <div className="sidebar">
