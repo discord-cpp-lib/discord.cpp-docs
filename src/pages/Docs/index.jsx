@@ -5,27 +5,21 @@ import ReactMarkDown from "react-markdown";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import Header from "../../components/Header/index";
-import gettingStarted from "./markdown/getting-started";
+import GettingStarted from "./markdown/getting-started";
 import simpleBot from "./markdown/simple-bot";
 import embeds from "./markdown/embeds";
 import webhooks from "./markdown/webhooks";
+import commands from "./markdown/commands";
 
 const Docs = () => {
     const [selectedMd, setSelectedMd] = useState("getting_started");
 
     const sections = {
-        getting_started: gettingStarted,
         simple_bot: simpleBot,
         embeds,
         webhooks,
+        commands,
     };
-
-    useEffect(() => {
-        document.title = "Docs | discord.cpp";
-        document.querySelectorAll("a").forEach((a) => {
-            a.target = "_blank";
-        });
-    }, [selectedMd]);
 
     return (
         <div>
@@ -39,7 +33,11 @@ const Docs = () => {
                         selectedMd={selectedMd}
                     />
                     <div className="docs-info">
-                        <ReactMarkDown allowDangerousHtml={true} children={sections[selectedMd]} renderers={{ code: Code }} />
+                        {selectedMd === "getting_started" ? (
+                            <GettingStarted />
+                        ) : (
+                            <ReactMarkDown linkTarget="_blank" allowDangerousHtml={true} children={sections[selectedMd]} renderers={{ code: Code }} />
+                        )}
                     </div>
                 </div>
             </div>

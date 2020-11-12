@@ -4,7 +4,7 @@ import "./style.css";
 const Sidebar = ({ selectedMd = "", selectMd = () => {} }) => {
     const topics = {
         General: ["Getting started"],
-        Examples: ["Simple BOT", "Embeds", "Webhooks"],
+        Examples: ["Simple BOT", "Embeds", "Commands", "Webhooks"],
         Classes: ["Client", "Message", "Channel", "User", "Embed", "Guild", "Role", "Webhook"],
     };
     return (
